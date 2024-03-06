@@ -1,4 +1,4 @@
-module github.com/dmgcoin/dmg
+module github.com/dmgcoin/dmgcoin
 
 go 1.18
 
