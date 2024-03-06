@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/dmgcoinnet/go-secp256k1"
+	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/cmd/dmgcoinwallet/libdmgcoinwallet/bip32"
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"
 	"github.com/dmgcoin/dmgcoin/util"
