@@ -2,13 +2,13 @@ package daawindowstore
 
 import (
 	"encoding/binary"
-	"github.com/golang/protobuf/proto"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/serialization"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/lrucachehashpairtoblockghostdagdatahashpair"
 	"github.com/dmgcoin/dmgcoin/infrastructure/db/database"
 	"github.com/dmgcoin/dmgcoin/util/staging"
+	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )
 

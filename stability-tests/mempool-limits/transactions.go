@@ -5,7 +5,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/app/appmessage"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/consensushashing"
@@ -18,6 +17,7 @@ import (
 	"github.com/dmgcoin/dmgcoin/infrastructure/network/rpcclient"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common/mine"
 	"github.com/dmgcoin/dmgcoin/util"
+	"github.com/dmgcoin/go-secp256k1"
 )
 
 const (

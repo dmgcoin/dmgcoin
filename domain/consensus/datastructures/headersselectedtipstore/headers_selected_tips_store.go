@@ -1,11 +1,11 @@
 package headersselectedtipstore
 
 import (
-	"github.com/golang/protobuf/proto"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/serialization"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/util/staging"
+	"github.com/golang/protobuf/proto"
 )
 
 var keyName = []byte("headers-selected-tip")

@@ -1,9 +1,9 @@
 package multiset
 
 import (
-	"github.com/dmgcoin/go-muhash"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
+	"github.com/dmgcoin/go-muhash"
 	"github.com/pkg/errors"
 )
 

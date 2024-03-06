@@ -1,10 +1,10 @@
 package daawindowstore
 
 import (
-	"github.com/golang/protobuf/proto"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/serialization"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
+	"github.com/golang/protobuf/proto"
 )
 
 type dbKey struct {

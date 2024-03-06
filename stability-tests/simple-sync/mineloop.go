@@ -3,11 +3,11 @@ package main
 import (
 	"time"
 
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/app/appmessage"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common/rpc"
 	"github.com/dmgcoin/dmgcoin/util"
+	"github.com/dmgcoin/go-secp256k1"
 	"github.com/pkg/errors"
 )
 

@@ -1,12 +1,12 @@
 package blockstatusstore
 
 import (
-	"github.com/golang/protobuf/proto"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/serialization"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/lrucache"
 	"github.com/dmgcoin/dmgcoin/util/staging"
+	"github.com/golang/protobuf/proto"
 )
 
 var bucketName = []byte("block-statuses")

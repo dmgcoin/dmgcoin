@@ -2,8 +2,8 @@ package bip32
 
 import (
 	"encoding/binary"
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/cmd/dmgcoinwallet/libdmgcoinwallet/bip32/base58"
+	"github.com/dmgcoin/go-secp256k1"
 	"github.com/pkg/errors"
 )
 

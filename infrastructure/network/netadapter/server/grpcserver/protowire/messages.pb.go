@@ -1828,9 +1828,11 @@ func (*DmgcoinMessage_GetVirtualSelectedParentBlueScoreRequest) isDmgcoinMessage
 
 func (*DmgcoinMessage_GetVirtualSelectedParentBlueScoreResponse) isDmgcoinMessage_Payload() {}
 
-func (*DmgcoinMessage_NotifyVirtualSelectedParentBlueScoreChangedRequest) isDmgcoinMessage_Payload() {}
+func (*DmgcoinMessage_NotifyVirtualSelectedParentBlueScoreChangedRequest) isDmgcoinMessage_Payload() {
+}
 
-func (*DmgcoinMessage_NotifyVirtualSelectedParentBlueScoreChangedResponse) isDmgcoinMessage_Payload() {}
+func (*DmgcoinMessage_NotifyVirtualSelectedParentBlueScoreChangedResponse) isDmgcoinMessage_Payload() {
+}
 
 func (*DmgcoinMessage_VirtualSelectedParentBlueScoreChangedNotification) isDmgcoinMessage_Payload() {}
 
@@ -2804,7 +2806,7 @@ func file_messages_proto_rawDescGZIP() []byte {
 
 var file_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_messages_proto_goTypes = []interface{}{
-	(*DmgcoinMessage)(nil),                                              // 0: protowire.DmgcoinMessage
+	(*DmgcoinMessage)(nil),                                             // 0: protowire.DmgcoinMessage
 	(*AddressesMessage)(nil),                                           // 1: protowire.AddressesMessage
 	(*BlockMessage)(nil),                                               // 2: protowire.BlockMessage
 	(*TransactionMessage)(nil),                                         // 3: protowire.TransactionMessage

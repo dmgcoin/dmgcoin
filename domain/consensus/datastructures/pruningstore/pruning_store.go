@@ -2,7 +2,6 @@ package pruningstore
 
 import (
 	"encoding/binary"
-	"github.com/golang/protobuf/proto"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/binaryserialization"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/database/serialization"
@@ -10,6 +9,7 @@ import (
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/lrucacheuint64tohash"
 	"github.com/dmgcoin/dmgcoin/util/staging"
+	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 )
 

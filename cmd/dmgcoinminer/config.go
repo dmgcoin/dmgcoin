@@ -12,8 +12,8 @@ import (
 	"github.com/dmgcoin/dmgcoin/util"
 	"github.com/pkg/errors"
 
-	"github.com/jessevdk/go-flags"
 	"github.com/dmgcoin/dmgcoin/version"
+	"github.com/jessevdk/go-flags"
 )
 
 const (

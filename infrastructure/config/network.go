@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/jessevdk/go-flags"
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"
 	"github.com/dmgcoin/dmgcoin/util/difficulty"
+	"github.com/jessevdk/go-flags"
 	"github.com/pkg/errors"
 )
 

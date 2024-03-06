@@ -5,11 +5,11 @@
 package dagconfig
 
 import (
-	"github.com/dmgcoin/go-muhash"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/blockheader"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/subnetworks"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/transactionhelper"
+	"github.com/dmgcoin/go-muhash"
 	"math/big"
 )
 

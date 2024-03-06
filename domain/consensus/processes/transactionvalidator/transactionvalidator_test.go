@@ -1,7 +1,6 @@
 package transactionvalidator_test
 
 import (
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/domain/consensus"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/ruleerrors"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/consensushashing"
@@ -9,6 +8,7 @@ import (
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/txscript"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/utxo"
 	"github.com/dmgcoin/dmgcoin/util"
+	"github.com/dmgcoin/go-secp256k1"
 
 	"testing"
 

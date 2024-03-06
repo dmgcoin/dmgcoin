@@ -12,8 +12,8 @@ import (
 
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/consensushashing"
 
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
+	"github.com/dmgcoin/go-secp256k1"
 	"github.com/pkg/errors"
 
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"

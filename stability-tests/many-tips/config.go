@@ -3,9 +3,9 @@ package main
 import (
 	"path/filepath"
 
-	"github.com/jessevdk/go-flags"
 	"github.com/dmgcoin/dmgcoin/infrastructure/config"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common"
+	"github.com/jessevdk/go-flags"
 )
 
 const (

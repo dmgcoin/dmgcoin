@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/app/appmessage"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/mining"
 	"github.com/dmgcoin/dmgcoin/util"
+	"github.com/dmgcoin/go-secp256k1"
 	"math/rand"
 	"os"
 	"os/exec"

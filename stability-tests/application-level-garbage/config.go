@@ -7,8 +7,8 @@ import (
 	"github.com/dmgcoin/dmgcoin/infrastructure/logger"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common"
 
-	"github.com/jessevdk/go-flags"
 	"github.com/dmgcoin/dmgcoin/infrastructure/config"
+	"github.com/jessevdk/go-flags"
 )
 
 const (

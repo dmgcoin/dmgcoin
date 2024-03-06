@@ -25,7 +25,7 @@ const (
 	AmountDMGC      AmountUnit = 0
 	AmountMilliDMGC AmountUnit = -3
 	AmountMicroDMGC AmountUnit = -6
-	AmountSompi    AmountUnit = -8
+	AmountSompi     AmountUnit = -8
 )
 
 // String returns the unit as a string. For recognized units, the SI

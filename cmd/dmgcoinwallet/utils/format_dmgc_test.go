@@ -77,7 +77,7 @@ func TestValidateAmountFormat(t *testing.T) {
 		"111111111111111111111", // all digits
 		"111111111111A11111111", // non-period/non-digit where decimal would be
 		"000000000000.00000000", // all zeros
-		"dmgcoin",                 // all text
+		"dmgcoin",               // all text
 	}
 
 	for _, testCase := range invalidCases {

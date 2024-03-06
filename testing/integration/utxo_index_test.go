@@ -6,7 +6,6 @@ import (
 
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/utxo"
 
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/app/appmessage"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/consensushashing"
@@ -14,6 +13,7 @@ import (
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/transactionid"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/txscript"
 	"github.com/dmgcoin/dmgcoin/util"
+	"github.com/dmgcoin/go-secp256k1"
 )
 
 func TestUTXOIndex(t *testing.T) {

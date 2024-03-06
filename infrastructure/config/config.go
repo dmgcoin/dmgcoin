@@ -17,13 +17,13 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/jessevdk/go-flags"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"
 	"github.com/dmgcoin/dmgcoin/infrastructure/logger"
 	"github.com/dmgcoin/dmgcoin/util"
 	"github.com/dmgcoin/dmgcoin/util/network"
 	"github.com/dmgcoin/dmgcoin/version"
+	"github.com/jessevdk/go-flags"
 	"github.com/pkg/errors"
 )
 

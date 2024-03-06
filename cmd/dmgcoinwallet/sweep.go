@@ -5,7 +5,6 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/dmgcoin/go-secp256k1"
 	"github.com/dmgcoin/dmgcoin/cmd/dmgcoinwallet/daemon/client"
 	"github.com/dmgcoin/dmgcoin/cmd/dmgcoinwallet/daemon/pb"
 	"github.com/dmgcoin/dmgcoin/cmd/dmgcoinwallet/libdmgcoinwallet"
@@ -21,6 +20,7 @@ import (
 	"github.com/dmgcoin/dmgcoin/domain/miningmanager/mempool"
 	"github.com/dmgcoin/dmgcoin/util"
 	"github.com/dmgcoin/dmgcoin/util/txmass"
+	"github.com/dmgcoin/go-secp256k1"
 	"github.com/pkg/errors"
 )
 
