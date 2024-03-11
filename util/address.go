@@ -54,10 +54,10 @@ const (
 
 // Map from strings to Bech32 address prefix constants for parsing purposes.
 var stringsToBech32Prefixes = map[string]Bech32Prefix{
-	"dmgcoin":     Bech32PrefixDmgcoin,
-	"dmgcoindev":  Bech32PrefixDmgcoinDev,
-	"dmgcointest": Bech32PrefixDmgcoinTest,
-	"dmgcoinsim":  Bech32PrefixDmgcoinSim,
+	"dmg":     Bech32PrefixDmgcoin,
+	"dmgdev":  Bech32PrefixDmgcoinDev,
+	"dmgtest": Bech32PrefixDmgcoinTest,
+	"dmgsim":  Bech32PrefixDmgcoinSim,
 }
 
 // ParsePrefix attempts to parse a Bech32 address prefix.
