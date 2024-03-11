@@ -7,10 +7,11 @@ package util_test
 import (
 	"bytes"
 	"fmt"
-	"golang.org/x/crypto/blake2b"
 	"reflect"
 	"strings"
 	"testing"
+
+	"golang.org/x/crypto/blake2b"
 
 	"github.com/dmgcoin/dmgcoin/util"
 )
@@ -442,9 +443,9 @@ func TestPrefixToString(t *testing.T) {
 		prefix            util.Bech32Prefix
 		expectedPrefixStr string
 	}{
-		{util.Bech32PrefixDmgcoin, "dmgcoin"},
-		{util.Bech32PrefixDmgcoinTest, "dmgcointest"},
-		{util.Bech32PrefixDmgcoinSim, "dmgcoinsim"},
+		{util.Bech32PrefixDmgcoin, "dmg"},
+		{util.Bech32PrefixDmgcoinTest, "dmgtest"},
+		{util.Bech32PrefixDmgcoinSim, "dmgsim"},
 		{util.Bech32PrefixUnknown, ""},
 	}
 
