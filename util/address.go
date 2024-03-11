@@ -130,7 +130,7 @@ type Address interface {
 func DecodeAddress(addr string, expectedPrefix Bech32Prefix) (Address, error) {
 	prefixString, decoded, version, err := bech32.Decode(addr)
 	if err != nil {
-		return nil, errors.Errorf("decoded address is of unknown format: %s", err)
+		return nil, errors.Errorf("decoded address is of unknown format: %s (Address : %s) (prefixString : %s) (decoded : %s)", err, addr, prefixString, decoded)
 	}
 
 	prefix, err := ParsePrefix(prefixString)
