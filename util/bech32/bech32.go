@@ -102,7 +102,7 @@ func decode(encoded string) (string, []byte, error) {
 		return "", nil, errors.Errorf("failed converting data to bytes: "+
 			"%s", err)
 	}
-	println("verifyChecksum (prefix : %s)  (decoded : %s) ", prefix, decoded)
+	//println("verifyChecksum (prefix : %s)  (decoded : %s) ", prefix, decoded)
 
 	if !verifyChecksum(prefix, decoded) {
 		checksum := encoded[len(encoded)-checksumLength:]
