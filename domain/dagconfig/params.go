@@ -301,7 +301,6 @@ var TestnetParams = Params{
 	DefaultPort: "16211",
 	DNSSeeds: []string{
 		"testnet.dmgcoin.com",
-		"testnet2.dmgcoin.com",
 		//"testnet-10-dnsseed.kas.pa",
 		// This DNS seeder is run by Tiram
 		//"seeder1-testnet.kaspad.net",
