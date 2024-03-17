@@ -103,7 +103,7 @@ func decode(encoded string) (string, []byte, error) {
 		return "", nil, errors.Errorf("failed converting data to bytes: "+
 			"%s", err)
 	}
-	println("verifyChecksum (prefix : %s) (data : %s) (decoded : %s) ", prefix, data, bytesToString(decoded))
+	println("issue in decodeFromBase32 verifyChecksum (prefix : %s) (data : %s) (decoded : %s) ", prefix, data, decoded)
 
 	if !verifyChecksum(prefix, decoded) {
 		checksum := encoded[len(encoded)-checksumLength:]
@@ -125,11 +125,6 @@ func intsToString(values []int) string {
 		result += strconv.Itoa(value) // Convert each int to a string and concatenate
 	}
 	return result
-}
-
-// bytesToString takes a slice of bytes as input and returns the corresponding string.
-func bytesToString(data []byte) string {
-	return string(data)
 }
 
 // Encode encodes a byte slice into a bech32 string with the
