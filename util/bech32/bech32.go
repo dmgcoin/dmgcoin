@@ -6,6 +6,7 @@ package bech32
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 
 	"github.com/pkg/errors"
@@ -102,7 +103,7 @@ func decode(encoded string) (string, []byte, error) {
 		return "", nil, errors.Errorf("failed converting data to bytes: "+
 			"%s", err)
 	}
-	//println("verifyChecksum (prefix : %s)  (decoded : %s) ", prefix, decoded)
+	println("verifyChecksum (prefix : %s)  (decoded : %s) ", prefix, bytesToString(decoded))
 
 	if !verifyChecksum(prefix, decoded) {
 		checksum := encoded[len(encoded)-checksumLength:]
@@ -115,6 +116,20 @@ func decode(encoded string) (string, []byte, error) {
 
 	// We exclude the last 8 bytes, which is the checksum.
 	return prefix, decoded[:len(decoded)-checksumLength], nil
+}
+
+// intsToString takes a slice of integers as input and returns a concatenated string of those integers.
+func intsToString(values []int) string {
+	var result string
+	for _, value := range values {
+		result += strconv.Itoa(value) // Convert each int to a string and concatenate
+	}
+	return result
+}
+
+// bytesToString takes a slice of bytes as input and returns the corresponding string.
+func bytesToString(data []byte) string {
+	return string(data)
 }
 
 // Encode encodes a byte slice into a bech32 string with the
@@ -255,6 +270,9 @@ func verifyChecksum(prefix string, payload []byte) bool {
 	// prefixLower5Bits + 0 + payloadInts
 	dataToVerify := append(prefixLower5Bits, 0)
 	dataToVerify = append(dataToVerify, payloadInts...)
+
+	println("Prefix: %s", prefix)
+	println("verifyChecksum: %s", intsToString(dataToVerify))
 
 	return polyMod(dataToVerify) == 0
 }
