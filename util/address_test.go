@@ -416,9 +416,9 @@ func TestParsePrefix(t *testing.T) {
 		expectedPrefix util.Bech32Prefix
 		expectedError  bool
 	}{
-		{"dmgcoin", util.Bech32PrefixDmgcoin, false},
-		{"dmgcointest", util.Bech32PrefixDmgcoinTest, false},
-		{"dmgcoinsim", util.Bech32PrefixDmgcoinSim, false},
+		{"dmg", util.Bech32PrefixDmgcoin, false},
+		{"dmgtest", util.Bech32PrefixDmgcoinTest, false},
+		{"dmgsim", util.Bech32PrefixDmgcoinSim, false},
 		{"blabla", util.Bech32PrefixUnknown, true},
 		{"unknown", util.Bech32PrefixUnknown, true},
 		{"", util.Bech32PrefixUnknown, true},
