@@ -7,6 +7,7 @@ package txscript_test
 import (
 	"encoding/hex"
 	"fmt"
+
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/txscript"
@@ -22,7 +23,7 @@ func ExamplePayToAddrScript() {
 	// which is useful to ensure the accuracy of the address and determine
 	// the address type. It is also required for the upcoming call to
 	// PayToAddrScript.
-	addressStr := "dmg:qqj9fg59mptxkr9j0y53j5mwurcmda5mtza9n6v9pm9uj8h0wgk6uma5pvumr"
+	addressStr := "dmg:qrz9r6pcks6ym0vf97kjxm88jhdcjrupqhj36c3xhet2nd650fvf5dkpxzpsx"
 	address, err := util.DecodeAddress(addressStr, util.Bech32PrefixDmgcoin)
 	if err != nil {
 		fmt.Println(err)

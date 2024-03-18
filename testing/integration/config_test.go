@@ -22,13 +22,13 @@ const (
 	rpcAddress4 = "127.0.0.1:12348"
 	rpcAddress5 = "127.0.0.1:12349"
 
-	miningAddress1           = "dmgsim:qqqqnc0pxg7qw3qkc7l6sge8kfhsvvyt7mkw8uamtndqup27ftnd6c769gn66"
+	miningAddress1           = "dmgsim:qq3xh578n7jwjgfq3t40ak0fc4rrdfc0fls20pkd59yhkhgkxjjfsh794ezym"
 	miningAddress1PrivateKey = "0d81045b0deb2af36a25403c2154c87aa82d89dd337b575bae27ce7f5de53cee"
 
-	miningAddress2           = "dmgsim:qqqqnc0pxg7qw3qkc7l6sge8kfhsvvyt7mkw8uamtndqup27ftnd6c769gn66"
+	miningAddress2           = "dmgsim:qre70atrwhvyj609y5hkazjyxv9jyuzpem74s6378puwtdc6ta59g3yn96qmd"
 	miningAddress2PrivateKey = "0d81045b0deb2af36a25403c2154c87aa82d89dd337b575bae27ce7f5de53cee"
 
-	miningAddress3           = "dmgsim:qqq754f2gdcjcnykwuwwr60c82rh5u6mxxe7yqxljnrxz9fu0h95kduq9ezng"
+	miningAddress3           = "dmgsim:qqr3hrnkzp9avndfelsx03djsvymp2pu4fm3pv22ypxl5d873dkr2rjlxu8gd"
 	miningAddress3PrivateKey = "f6c8f31fd359cbb97007034780bc4021f6ad01c6bc10499b79849efd4cc7ca39"
 
 	defaultTimeout = 30 * time.Second

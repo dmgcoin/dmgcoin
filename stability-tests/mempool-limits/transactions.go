@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	payAddress                       = "dmgsim:qzuax2jhawd354e54thhpd9m9wg03pdzwjlpr4vtq3k7xrpumhhtwa2hkr3ep"
+	payAddress                       = "dmgsim:qzzq4pr2mvmtufsvwj3khd0xy4cchhscrchv6ac4yrz8xjtmarjvcq08ds3et"
 	payAddressPrivateKey             = "05d8f681e954a550395ee2297fc1a14f6e801f554c0b9d48cd7165a7ea72ff77"
 	fundingCoinbaseTransactionAmount = 1000
 	outputsPerTransaction            = 3

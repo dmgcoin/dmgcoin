@@ -1,21 +1,22 @@
 package daa
 
 import (
+	"math"
+	"math/rand"
+	"os"
+	"testing"
+	"time"
+
 	"github.com/dmgcoin/dmgcoin/app/appmessage"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/pow"
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"
 	"github.com/dmgcoin/dmgcoin/infrastructure/network/rpcclient"
 	"github.com/dmgcoin/dmgcoin/stability-tests/common"
-	"math"
-	"math/rand"
-	"os"
-	"testing"
-	"time"
 )
 
 const rpcAddress = "localhost:9000"
-const miningAddress = "dmgdev:qrcqat6l9zcjsu7swnaztqzrv0s7hu04skpaezxk43y4etj8ncwfkuhy0zmax"
+const miningAddress = "dmgdev:qzyafmz7r9w5ssut26c2v4qyrm7muu804r4s8kzw0mvjh6vggmz6uw5tn8d5u"
 const blockRateDeviationThreshold = 0.5
 const averageBlockRateSampleSize = 60
 const averageHashRateSampleSize = 100_000

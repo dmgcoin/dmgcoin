@@ -30,8 +30,8 @@ func TestAddresses(t *testing.T) {
 		// Positive P2PK tests.
 		{
 			name:    "mainnet p2pk",
-			addr:    "dmg:qr35ennsep3hxfe7lnz5ee7j5jgmkjswsn35ennsep3hxfe7ln35cdv0dy335",
-			encoded: "dmg:qr35ennsep3hxfe7lnz5ee7j5jgmkjswsn35ennsep3hxfe7ln35cdv0dy335",
+			addr:    "dmg:qz0dan43gduu80farhs5e64zfwv6zuxzgc9gk5s8ewwx925cg80v6zyeaulma",
+			encoded: "dmg:qz0dan43gduu80farhs5e64zfwv6zuxzgc9gk5s8ewwx925cg80v6zyeaulma",
 			valid:   true,
 			result: util.TstAddressPubKey(
 				util.Bech32PrefixDmgcoin,
@@ -54,8 +54,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "mainnet p2pk 2",
-			addr:    "dmg:qq80qvqs0lfxuzmt7sz3909ze6camq9d4t35ennsep3hxfe7ln35cvfqgz3z8",
-			encoded: "dmg:qq80qvqs0lfxuzmt7sz3909ze6camq9d4t35ennsep3hxfe7ln35cvfqgz3z8",
+			addr:    "dmg:qqlp4xcydsx4xudy9azpm5e2anx3nzqtq0l54z06zladh88kgas5xnzupwx02",
+			encoded: "dmg:qqlp4xcydsx4xudy9azpm5e2anx3nzqtq0l54z06zladh88kgas5xnzupwx02",
 			valid:   true,
 			result: util.TstAddressPubKey(
 				util.Bech32PrefixDmgcoin,
@@ -79,8 +79,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "testnet p2pk",
-			addr:    "dmgtest:qputx94qseratdmjs0j395mq8u03er0x3l35ennsep3hxfe7ln35ckquw528z",
-			encoded: "dmgtest:qputx94qseratdmjs0j395mq8u03er0x3l35ennsep3hxfe7ln35ckquw528z",
+			addr:    "dmgtest:qptmlny9wyxllkeey3tm6velhpxhzksdy9yl4a8lvv5vw4uz4xm9jjnz5yuqh",
+			encoded: "dmgtest:qptmlny9wyxllkeey3tm6velhpxhzksdy9yl4a8lvv5vw4uz4xm9jjnz5yuqh",
 			valid:   true,
 			result: util.TstAddressPubKey(
 				util.Bech32PrefixDmgcoinTest,
@@ -106,8 +106,8 @@ func TestAddresses(t *testing.T) {
 		// ECDSA P2PK tests.
 		{
 			name:    "mainnet ecdsa p2pk",
-			addr:    "dmg:qyp0r5mcq4rd5grj3652ra09u5dcgwqq9ntuswp247nama5quyj40eq03sc2dkx",
-			encoded: "dmg:qyp0r5mcq4rd5grj3652ra09u5dcgwqq9ntuswp247nama5quyj40eq03sc2dkx",
+			addr:    "dmg:qrasqa3kg6e4e769s93mmfwd03gsus9hp22dw4nvqd7fsvvgsgja6hk834elx",
+			encoded: "dmg:qrasqa3kg6e4e769s93mmfwd03gsus9hp22dw4nvqd7fsvvgsgja6hk834elx",
 			valid:   true,
 			result: util.TstAddressPubKeyECDSA(
 				util.Bech32PrefixDmgcoin,
@@ -141,7 +141,7 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:           "p2pk bad checksum",
-			addr:           "dmg:qr35ennsep3hxfe7lnz5ee7j5jgmkjswss74as46gx",
+			addr:           "dmg:qqmz7t7agfr4zvd38u93629te0d7mljdsxysx",
 			valid:          false,
 			passedPrefix:   util.Bech32PrefixDmgcoin,
 			expectedPrefix: util.Bech32PrefixDmgcoin,
@@ -150,8 +150,8 @@ func TestAddresses(t *testing.T) {
 		// Positive P2SH tests.
 		{
 			name:    "mainnet p2sh",
-			addr:    "dmg:prq20q4qd9ulr044cauyy9wtpeupqpjv67pn2vyc6acly7xqkrjdzmh8rj9f4",
-			encoded: "dmg:prq20q4qd9ulr044cauyy9wtpeupqpjv67pn2vyc6acly7xqkrjdzmh8rj9f4",
+			addr:    "dmg:qqmz7t7agfr4zvd38u93629te0d7mljdsxysxrg4udcdtfjcwq7tyz8gmh0ds",
+			encoded: "dmg:qqmz7t7agfr4zvd38u93629te0d7mljdsxysxrg4udcdtfjcwq7tyz8gmh0ds",
 			valid:   true,
 			result: util.TstAddressScriptHash(
 				util.Bech32PrefixDmgcoin,
@@ -191,8 +191,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "mainnet p2sh 2",
-			addr:    "dmg:pr5vxqxg0xrwl2zvxlq9rxffqx00sm44kn5vxqxg0xrwl2zvxl5vxyhvsake2",
-			encoded: "dmg:pr5vxqxg0xrwl2zvxlq9rxffqx00sm44kn5vxqxg0xrwl2zvxl5vxyhvsake2",
+			addr:    "dmg:qphtyfcm35laj63fkg9cqrpevsc5505j3n63qs2xuhgevnw7wfxkkwy4t0u2l",
+			encoded: "dmg:qphtyfcm35laj63fkg9cqrpevsc5505j3n63qs2xuhgevnw7wfxkkwy4t0u2l",
 			valid:   true,
 			result: util.TstAddressScriptHash(
 				util.Bech32PrefixDmgcoin,
@@ -216,8 +216,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "testnet p2sh",
-			addr:    "dmgtest:przhjdpv93xfygpqtckdc2zkzuzqeyj2pt5vxqxg0xrwl2zvxl5vx35yyy2h9",
-			encoded: "dmgtest:przhjdpv93xfygpqtckdc2zkzuzqeyj2pt5vxqxg0xrwl2zvxl5vx35yyy2h9",
+			addr:    "dmgtest:qpxmea59ug3g7gwact69lttxaxhsur6arqjn5gcf8aj57a9rct4fgwsqepn8c",
+			encoded: "dmgtest:qpxmea59ug3g7gwact69lttxaxhsur6arqjn5gcf8aj57a9rct4fgwsqepn8c",
 			valid:   true,
 			result: util.TstAddressScriptHash(
 				util.Bech32PrefixDmgcoinTest,
@@ -383,7 +383,7 @@ func TestDecodeAddressErrorConditions(t *testing.T) {
 			"decoded address's prefix could not be parsed",
 		},
 		{
-			"dmgsim:raskzctpv9skzctpv9skzctpv9skzctpvy37ct7zafpv9skzctpvymmnd3gh8",
+			"dmgsim:qpm7lzcv0q22w8cv8yr4w69kwsrykwcpkp3wfpn9t8lwym5x0vq02t7566jcx",
 			util.Bech32PrefixDmgcoinSim,
 			"unknown address type",
 		},
