@@ -103,7 +103,7 @@ func decode(encoded string) (string, []byte, error) {
 		return "", nil, errors.Errorf("failed converting data to bytes: "+
 			"%s", err)
 	}
-	println("issue in decodeFromBase32 verifyChecksum (prefix : %s) (data : %s) (decoded : %s) ", prefix, data, string(decoded))
+	//println("issue in decodeFromBase32 verifyChecksum (prefix : %s) (data : %s) (decoded : %s) ", prefix, data, string(decoded))
 
 	if !verifyChecksum(prefix, decoded) {
 		checksum := encoded[len(encoded)-checksumLength:]
@@ -266,8 +266,8 @@ func verifyChecksum(prefix string, payload []byte) bool {
 	dataToVerify := append(prefixLower5Bits, 0)
 	dataToVerify = append(dataToVerify, payloadInts...)
 
-	println("Prefix: %s", prefix)
-	println("verifyChecksum: %s", intsToString(dataToVerify))
+	//println("Prefix: %s", prefix)
+	//println("verifyChecksum: %s", intsToString(dataToVerify))
 
 	return polyMod(dataToVerify) == 0
 }
