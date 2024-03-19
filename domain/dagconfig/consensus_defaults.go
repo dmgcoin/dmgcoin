@@ -82,7 +82,7 @@ const (
 	// Half a year in seconds = 365.25 / 2 * 24 * 60 * 60 = 15778800
 	// The network was down for three days shortly after launch
 	// Three days in seconds = 3 * 24 * 60 * 60 = 259200
-	defaultDeflationaryPhaseDaaScore = 157788000 - 259200
+	defaultDeflationaryPhaseDaaScore = 15778800 - 259200
 
 	defaultMergeDepth = 3600
 )
