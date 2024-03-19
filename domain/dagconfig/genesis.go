@@ -235,7 +235,7 @@ var testnetGenesisBlock = externalapi.DomainBlock{
 		testnetGenesisMerkleRoot,
 		&externalapi.DomainHash{},
 		externalapi.NewDomainHashFromByteArray(muhash.EmptyMuHashHash.AsArray()),
-		0x17c5f62fbb6,
+		0x18e5601942d,
 		0x1e7fffff,
 		0x14582,
 		0,
