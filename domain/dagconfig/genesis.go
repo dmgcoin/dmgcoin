@@ -230,7 +230,7 @@ var testnetGenesisMerkleRoot = externalapi.NewDomainHashFromByteArray(&[external
 // public transaction ledger for testnet.
 var testnetGenesisBlock = externalapi.DomainBlock{
 	Header: blockheader.NewImmutableBlockHeader(
-		0,
+		1,
 		[]externalapi.BlockLevelParents{},
 		testnetGenesisMerkleRoot,
 		&externalapi.DomainHash{},
