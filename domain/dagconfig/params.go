@@ -285,7 +285,7 @@ var MainnetParams = Params{
 	CoinbasePayloadScriptPublicKeyMaxLength: defaultCoinbasePayloadScriptPublicKeyMaxLength,
 	PruningProofM:                           defaultPruningProofM,
 	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
-	DisallowDirectBlocksOnTopOfGenesis:      true,
+	DisallowDirectBlocksOnTopOfGenesis:      false,
 
 	// This is technically 255, but we clamped it at 256 - block level of mainnet genesis
 	// This means that any block that has a level lower or equal to genesis will be level 0.
@@ -356,8 +356,9 @@ var TestnetParams = Params{
 	PruningProofM:                           defaultPruningProofM,
 	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
 
-	MaxBlockLevel: 250,
-	MergeDepth:    defaultMergeDepth,
+	MaxBlockLevel:                      250,
+	MergeDepth:                         defaultMergeDepth,
+	DisallowDirectBlocksOnTopOfGenesis: false,
 }
 
 // SimnetParams defines the network parameters for the simulation test Dmgcoin
