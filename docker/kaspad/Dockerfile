@@ -46,7 +46,7 @@ ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 16111 16110
 VOLUME /app/data
 
-COPY --from=builder /go/bin/kaspad /go/bin/kaspactl /app/
+COPY --from=builder /go/bin/dmgcoin /go/bin/dmgcoinctl /app/
 
-CMD ["kaspad", "--utxoindex"]
+CMD ["dmgcoin", "--utxoindex", "--testnet"]
 
