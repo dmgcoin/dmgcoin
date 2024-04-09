@@ -1120,6 +1120,7 @@ func (s *consensus) IsNearlySynced() (bool, error) {
 func (s *consensus) isNearlySyncedNoLock() (bool, error) {
 	stagingArea := model.NewStagingArea()
 	virtualGHOSTDAGData, err := s.ghostdagDataStores[0].Get(s.databaseContext, stagingArea, model.VirtualBlockHash, false)
+
 	if err != nil {
 		return false, err
 	}
@@ -1144,5 +1145,6 @@ func (s *consensus) isNearlySyncedNoLock() (bool, error) {
 
 	log.Debugf("The selected tip timestamp is old (%d), so IsNearlySynced returns false",
 		virtualSelectedParentHeader.TimeInMilliseconds())
+
 	return false, nil
 }
