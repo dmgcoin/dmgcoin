@@ -58,26 +58,26 @@ func TestDevnetGenesisBlock(t *testing.T) {
 	}
 }
 
-/*func TestDevnetGenesisBlock2(t *testing.T) {
+func TestDevnetGenesisBlock2(t *testing.T) {
 	// Check hash of the block against expected hash.
-	hash := consensushashing.BlockHash(MainnetParams.GenesisBlock)
-	trHash := consensushashing.TransactionHash(MainnetParams.GenesisBlock.Transactions[0])
+	hash := consensushashing.BlockHash(TestnetParams.GenesisBlock)
+	trHash := consensushashing.TransactionHash(TestnetParams.GenesisBlock.Transactions[0])
 
 	t.Logf("BLOCKHASH %v", hash)
 	t.Logf("TXHASH %v", trHash)
 
-	var genesisHash = externalapi.NewDomainHashFromByteArray(&[externalapi.DomainHashSize]byte{
-		0x16, 0x39, 0xc5, 0xcb, 0x4f, 0xe8, 0xf2, 0x8e,
-		0x66, 0xcb, 0xc9, 0x7b, 0x7f, 0x13, 0x15, 0x40,
-		0x8d, 0xfd, 0xc3, 0x66, 0x8, 0x46, 0xf2, 0x65,
-		0x7b, 0xa7, 0x1e, 0x1b, 0x68, 0x8b, 0xd5, 0xb9,
-	})
+	// var genesisHash = externalapi.NewDomainHashFromByteArray(&[externalapi.DomainHashSize]byte{
+	// 	0x16, 0x39, 0xc5, 0xcb, 0x4f, 0xe8, 0xf2, 0x8e,
+	// 	0x66, 0xcb, 0xc9, 0x7b, 0x7f, 0x13, 0x15, 0x40,
+	// 	0x8d, 0xfd, 0xc3, 0x66, 0x8, 0x46, 0xf2, 0x65,
+	// 	0x7b, 0xa7, 0x1e, 0x1b, 0x68, 0x8b, 0xd5, 0xb9,
+	// })
 
-	t.Logf("genesisHash %v", genesisHash)
+	//t.Logf("genesisHash %v", genesisHash)
 
-	if !MainnetParams.GenesisHash.Equal(hash) {
+	if !TestnetParams.GenesisHash.Equal(hash) {
 		t.Fatalf("TestDevnetGenesisBlock: Genesis block hash does "+
 			"not appear valid - got %v, want %v", hash,
-			MainnetParams.GenesisHash)
+			TestnetParams.GenesisHash)
 	}
-}*/
+}
