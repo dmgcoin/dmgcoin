@@ -9,7 +9,7 @@ ARCHES="linux/amd64 linux/arm64"
 BUILD_DIR="$(dirname $0)"
 PUSH=$1
 VERSION=$2
-TAG=${3:-master}
+TAG=${3:-main}
 REPO_URL=${4:-$REPO_URL_MAIN}
 REPO_DIR="work/$(echo $REPO_URL | sed -E 's/[^a-zA-Z0-9]+/_/g')"
 

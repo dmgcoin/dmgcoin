@@ -268,7 +268,7 @@ var MainnetParams = Params{
 	Prefix: util.Bech32PrefixDmgcoin,
 
 	// Address encoding magics
-	PrivateKeyID: 0x80, // starts with 5 (uncompressed) or K (compressed)
+	PrivateKeyID: 0x94, // starts with 5 (uncompressed) or P (compressed)
 
 	// EnableNonNativeSubnetworks enables non-native/coinbase transactions
 	EnableNonNativeSubnetworks: false,
@@ -338,7 +338,7 @@ var TestnetParams = Params{
 	Prefix: util.Bech32PrefixDmgcoinTest,
 
 	// Address encoding magics
-	PrivateKeyID: 0xef, // starts with 9 (uncompressed) or c (compressed)
+	PrivateKeyID: 0xa9, // starts with 6 (uncompressed) or S (compressed)
 
 	// EnableNonNativeSubnetworks enables non-native/coinbase transactions
 	EnableNonNativeSubnetworks: false,
@@ -403,7 +403,7 @@ var SimnetParams = Params{
 	// IP addresses, such as 10.0.0.0/8
 	AcceptUnroutable: false,
 
-	PrivateKeyID: 0x64, // starts with 4 (uncompressed) or F (compressed)
+	PrivateKeyID: 0x51, // starts with 3 (uncompressed) or D (compressed)
 	// Human-readable part for Bech32 encoded addresses
 	Prefix: util.Bech32PrefixDmgcoinSim,
 
@@ -467,7 +467,7 @@ var DevnetParams = Params{
 	Prefix: util.Bech32PrefixDmgcoinDev,
 
 	// Address encoding magics
-	PrivateKeyID: 0xef, // starts with 9 (uncompressed) or c (compressed)
+	PrivateKeyID: 0xa9, // starts with 6 (uncompressed) or S (compressed)
 
 	// EnableNonNativeSubnetworks enables non-native/coinbase transactions
 	EnableNonNativeSubnetworks: false,

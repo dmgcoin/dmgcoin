@@ -5,9 +5,9 @@ FROM golang:1.20 as builder
 
 ARG REPO_DIR
 
-COPY "$REPO_DIR" /kaspa
+COPY "$REPO_DIR" /dmgcoin
 
-WORKDIR /kaspa
+WORKDIR /dmgcoin
 
 RUN go install -ldflags="-s -w -extldflags=-static" -tags netgo,osusergo . ./cmd/...
 

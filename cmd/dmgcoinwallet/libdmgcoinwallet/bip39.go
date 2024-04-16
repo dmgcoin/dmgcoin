@@ -23,7 +23,7 @@ const (
 	// BIP 45 doesn't have a coin type in its derivation path.
 	MultiSigPurpose = 45
 	// TODO: Register the coin type in https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-	CoinType = 111111
+	CoinType = 35752108
 )
 
 func defaultPath(isMultisig bool) string {

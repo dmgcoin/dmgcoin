@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if echo "$@" | grep -qE "^(/app/)?kaspad( |$)" && ! echo "$@" | grep -qE "\--externalip(=| )"; then
+if echo "$@" | grep -qE "^(/app/)?dmgcoin( |$)" && ! echo "$@" | grep -qE "\--externalip(=| )"; then
   listenPort=$(echo "$@" | grep -oP "\--listen(=| )\S+:\K\d+( |$)" | tail -1)
   if [ -n "$listenPort" ]; then
     listenPort=":$listenPort"

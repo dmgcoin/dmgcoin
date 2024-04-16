@@ -24,82 +24,82 @@ var BitcoinMainnetPublic = [4]byte{
 
 // DmgcoinMainnetPrivate is the version that is used for
 // Dmgcoin mainnet bip32 private extended keys.
-// Ecnodes to xprv in base58.
+// Ecnodes to dmpr in base58.
 var DmgcoinMainnetPrivate = [4]byte{
-	0x03,
-	0x8f,
-	0x2e,
-	0xf4,
+	0x64,
+	0x6D,
+	0x70,
+	0x72,
 }
 
 // DmgcoinMainnetPublic is the version that is used for
 // Dmgcoin mainnet bip32 public extended keys.
-// Ecnodes to kpub in base58.
+// Ecnodes to dmpb in base58.
 var DmgcoinMainnetPublic = [4]byte{
-	0x03,
-	0x8f,
-	0x33,
-	0x2e,
+	0x64,
+	0x6D,
+	0x70,
+	0x62,
 }
 
 // DmgcoinTestnetPrivate is the version that is used for
 // Dmgcoin testnet bip32 public extended keys.
-// Ecnodes to ktrv in base58.
+// Ecnodes to dtpr in base58.
 var DmgcoinTestnetPrivate = [4]byte{
-	0x03,
-	0x90,
-	0x9e,
-	0x07,
+	0x64,
+	0x74,
+	0x70,
+	0x72,
 }
 
 // DmgcoinTestnetPublic is the version that is used for
 // Dmgcoin testnet bip32 public extended keys.
-// Ecnodes to ktub in base58.
+// Ecnodes to dtpb in base58.
 var DmgcoinTestnetPublic = [4]byte{
-	0x03,
-	0x90,
-	0xa2,
-	0x41,
+	0x64,
+	0x74,
+	0x70,
+	0x62,
 }
 
 // DmgcoinDevnetPrivate is the version that is used for
 // Dmgcoin devnet bip32 public extended keys.
-// Ecnodes to kdrv in base58.
+// Ecnodes to ddpr in base58.
 var DmgcoinDevnetPrivate = [4]byte{
-	0x03,
-	0x8b,
-	0x3d,
-	0x80,
+	0x64,
+	0x64,
+	0x70,
+	0x72,
 }
 
 // DmgcoinDevnetPublic is the version that is used for
 // Dmgcoin devnet bip32 public extended keys.
-// Ecnodes to xdub in base58.
+// Ecnodes to ddpb in base58.
 var DmgcoinDevnetPublic = [4]byte{
-	0x03,
-	0x8b,
-	0x41,
-	0xba,
+	0x64,
+	0x64,
+	0x70,
+	0x62,
 }
 
 // DmgcoinSimnetPrivate is the version that is used for
 // Dmgcoin simnet bip32 public extended keys.
-// Ecnodes to ksrv in base58.
+// Ecnodes to dspr in base58.
 var DmgcoinSimnetPrivate = [4]byte{
-	0x03,
-	0x90,
-	0x42,
-	0x42,
+	0x64,
+	0x73,
+	0x70,
+	0x72,
 }
 
 // DmgcoinSimnetPublic is the version that is used for
 // Dmgcoin simnet bip32 public extended keys.
-// Ecnodes to xsub in base58.
+// Ecnodes to dspb in base58.
 var DmgcoinSimnetPublic = [4]byte{
-	0x03,
-	0x90,
-	0x46,
-	0x7d,
+	0x64,
+	0x73,
+	0x70,
+	0x62,
 }
 
 func toPublicVersion(version [4]byte) ([4]byte, error) {
