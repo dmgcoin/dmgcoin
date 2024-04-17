@@ -1,11 +1,12 @@
 package coinbasemanager
 
 import (
+	"strconv"
+	"testing"
+
 	"github.com/dmgcoin/dmgcoin/domain/consensus/model/externalapi"
 	"github.com/dmgcoin/dmgcoin/domain/consensus/utils/constants"
 	"github.com/dmgcoin/dmgcoin/domain/dagconfig"
-	"strconv"
-	"testing"
 )
 
 func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
@@ -83,7 +84,7 @@ func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
 
 func TestBuildSubsidyTable(t *testing.T) {
 	deflationaryPhaseBaseSubsidy := dagconfig.MainnetParams.DeflationaryPhaseBaseSubsidy
-	if deflationaryPhaseBaseSubsidy != 440*constants.SompiPerDmgcoin {
+	if deflationaryPhaseBaseSubsidy != 0.0176*constants.SompiPerDmgcoin {
 		t.Errorf("TestBuildSubsidyTable: table generation function was not updated to reflect "+
 			"the new base subsidy %d. Please fix the constant above and replace subsidyByDeflationaryMonthTable "+
 			"in coinbasemanager.go with the printed table", deflationaryPhaseBaseSubsidy)
