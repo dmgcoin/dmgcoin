@@ -5,7 +5,7 @@ Dmgcoin
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/dmgcoin/dmgcoin)
 
-Dmgcoin is the reference full node Dmgcoin implementation written in Go (golang).
+Dmgcoin is the reference full node implementation written in Go (golang).
 
 ## What is dmg
 
