@@ -214,27 +214,7 @@ var MainnetParams = Params{
 	RPCPort:     "16110",
 	DefaultPort: "16111",
 	DNSSeeds: []string{
-		"testnet.dmgcoin.com",
-		// // This DNS seeder is run by Wolfie
-		// "mainnet-dnsseed.kas.pa",
-		// // This DNS seeder is run by Denis Mashkevich
-		// "mainnet-dnsseed-1.kaspanet.org",
-		// // This DNS seeder is run by Denis Mashkevich
-		// "mainnet-dnsseed-2.kaspanet.org",
-		// // This DNS seeder is run by Constantine Bytensky
-		// "dnsseed.cbytensky.org",
-		// // This DNS seeder is run by Georges Künzli
-		// "seeder1.kaspad.net",
-		// // This DNS seeder is run by Georges Künzli
-		// "seeder2.kaspad.net",
-		// // This DNS seeder is run by Georges Künzli
-		// "seeder3.kaspad.net",
-		// // This DNS seeder is run by Georges Künzli
-		// "seeder4.kaspad.net",
-		// // This DNS seeder is run by Tim
-		// "kaspadns.kaspacalc.net",
-		// // This DNS seeder is run by supertypo
-		// "n-mainnet.kaspa.ws",
+		"mainnet.dmgcoin.org",
 	},
 
 	// DAG parameters

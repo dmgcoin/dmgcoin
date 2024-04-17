@@ -84,7 +84,7 @@ const (
 	// The network was down for three days shortly after launch
 	// Three days in seconds = 3 * 24 * 60 * 60 = 259200
 	// ß15778800 - 259200
-	defaultDeflationaryPhaseDaaScore = 2000
+	defaultDeflationaryPhaseDaaScore = 259200
 
 	defaultMergeDepth = 3600
 )
