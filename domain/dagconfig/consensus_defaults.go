@@ -48,10 +48,11 @@ const (
 	// (Higher values make pruning attacks easier by a constant, lower values make merging after a split or a spike
 	// in block take longer)
 	defaultMergeSetSizeLimit                       = defaultGHOSTDAGK * 10
-	defaultSubsidyGenesisReward                    = 0.108 * constants.SompiPerDmgcoin
+	defaultSubsidyGenesisReward                    = 1 * constants.SompiPerDmgcoin
 	defaultPreDeflationaryPhaseBaseSubsidy         = 0.02 * constants.SompiPerDmgcoin
 	defaultDeflationaryPhaseBaseSubsidy            = 0.0176 * constants.SompiPerDmgcoin
 	defaultCoinbasePayloadScriptPublicKeyMaxLength = 150
+
 	// defaultDifficultyAdjustmentWindowSize is the number of blocks in a block's past used to calculate its difficulty
 	// target.
 	// The DAA should take the median of 2640 blocks, so in order to do that we need 2641 window size.
