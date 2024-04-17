@@ -49,7 +49,7 @@ const (
 	// in block take longer)
 	defaultMergeSetSizeLimit                       = defaultGHOSTDAGK * 10
 	defaultSubsidyGenesisReward                    = 1 * constants.SompiPerDmgcoin
-	defaultPreDeflationaryPhaseBaseSubsidy         = 0.02 * constants.SompiPerDmgcoin
+	defaultPreDeflationaryPhaseBaseSubsidy         = 0.772 * constants.SompiPerDmgcoin
 	defaultDeflationaryPhaseBaseSubsidy            = 0.0176 * constants.SompiPerDmgcoin
 	defaultCoinbasePayloadScriptPublicKeyMaxLength = 150
 
