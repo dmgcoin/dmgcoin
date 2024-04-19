@@ -50,8 +50,6 @@ of the basic operations work with zero configuration.
 $ dmgcoin
 ```
 
-## Discord
-Join our discord server using the following link: https://discord.gg/YNYnNN5Pf2
 
 ## Issue Tracker
 
