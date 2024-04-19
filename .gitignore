@@ -62,3 +62,5 @@ coverage.txt
 
 testdbs/
 coverage.tmp
+
+.DS_Store
