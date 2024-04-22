@@ -26,20 +26,20 @@ var BitcoinMainnetPublic = [4]byte{
 // Dmgcoin mainnet bip32 private extended keys.
 // Ecnodes to dmpr in base58.
 var DmgcoinMainnetPrivate = [4]byte{
-	0x64,
-	0x6D,
-	0x70,
-	0x72,
+	0x02,
+	0xfc,
+	0x8e,
+	0x54,
 }
 
 // DmgcoinMainnetPublic is the version that is used for
 // Dmgcoin mainnet bip32 public extended keys.
 // Ecnodes to dmpb in base58.
 var DmgcoinMainnetPublic = [4]byte{
-	0x64,
-	0x6D,
-	0x70,
-	0x62,
+	0x02,
+	0xfc,
+	0x8d,
+	0xeb,
 }
 
 // DmgcoinTestnetPrivate is the version that is used for
@@ -66,40 +66,40 @@ var DmgcoinTestnetPublic = [4]byte{
 // Dmgcoin devnet bip32 public extended keys.
 // Ecnodes to ddpr in base58.
 var DmgcoinDevnetPrivate = [4]byte{
-	0x64,
-	0x64,
-	0x70,
-	0x72,
+	0x02,
+	0xf9,
+	0xb0,
+	0x2e,
 }
 
 // DmgcoinDevnetPublic is the version that is used for
 // Dmgcoin devnet bip32 public extended keys.
 // Ecnodes to ddpb in base58.
 var DmgcoinDevnetPublic = [4]byte{
-	0x64,
-	0x64,
-	0x70,
-	0x62,
+	0x02,
+	0xf9,
+	0xaf,
+	0xc5,
 }
 
 // DmgcoinSimnetPrivate is the version that is used for
 // Dmgcoin simnet bip32 public extended keys.
 // Ecnodes to dspr in base58.
 var DmgcoinSimnetPrivate = [4]byte{
-	0x64,
-	0x73,
-	0x70,
-	0x72,
+	0x02,
+	0xfe,
+	0xb4,
+	0xf0,
 }
 
 // DmgcoinSimnetPublic is the version that is used for
 // Dmgcoin simnet bip32 public extended keys.
 // Ecnodes to dspb in base58.
 var DmgcoinSimnetPublic = [4]byte{
-	0x64,
-	0x73,
-	0x70,
-	0x62,
+	0x02,
+	0xfe,
+	0xb4,
+	0x88,
 }
 
 func toPublicVersion(version [4]byte) ([4]byte, error) {
