@@ -49,7 +49,7 @@ const (
 	// in block take longer)
 	defaultMergeSetSizeLimit                       = defaultGHOSTDAGK * 10
 	defaultSubsidyGenesisReward                    = 1 * constants.SompiPerDmgcoin
-	defaultPreDeflationaryPhaseBaseSubsidy         = 0.772 * constants.SompiPerDmgcoin
+	defaultPreDeflationaryPhaseBaseSubsidy         = 2.316 * constants.SompiPerDmgcoin
 	defaultDeflationaryPhaseBaseSubsidy            = 0.0176 * constants.SompiPerDmgcoin
 	defaultCoinbasePayloadScriptPublicKeyMaxLength = 150
 
@@ -84,7 +84,8 @@ const (
 	// The network was down for three days shortly after launch
 	// Three days in seconds = 3 * 24 * 60 * 60 = 259200
 	// ß15778800 - 259200
-	defaultDeflationaryPhaseDaaScore = 259200
+	// One dat in seconds = 24 * 60 * 60 = 86400
+	defaultDeflationaryPhaseDaaScore = 86400
 
 	defaultMergeDepth = 3600
 )

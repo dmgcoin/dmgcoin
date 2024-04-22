@@ -214,7 +214,7 @@ var MainnetParams = Params{
 	RPCPort:     "16110",
 	DefaultPort: "16111",
 	DNSSeeds: []string{
-		"mainnet.dmgcoin.org",
+		"mainnet1.dmgcoin.com",
 	},
 
 	// DAG parameters
