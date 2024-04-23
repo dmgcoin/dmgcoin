@@ -215,6 +215,7 @@ var MainnetParams = Params{
 	DefaultPort: "16111",
 	DNSSeeds: []string{
 		"mainnet1.dmgcoin.com",
+		"mainnet2.dmgcoin.com",
 	},
 
 	// DAG parameters
