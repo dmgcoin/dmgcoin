@@ -216,6 +216,7 @@ var MainnetParams = Params{
 	DNSSeeds: []string{
 		"mainnet1.dmgcoin.com",
 		"mainnet2.dmgcoin.com",
+		"mainnet3.dmgcoin.org",
 	},
 
 	// DAG parameters
